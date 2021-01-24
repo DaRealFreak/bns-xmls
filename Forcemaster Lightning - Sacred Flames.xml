@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patches>
+  <patch file="skill3_contextscriptdata_forcemaster.xml">
+  <select-nodes query="/table/contextscript/stance">
+    <select-node query="./layer">
+    <insert-sibling-before name="layer">
+      <append-buffer>
+      <![CDATA[ 
+        <decision>
+          <condition skill="130004" />
+          <result special-1="130004" control-mode="classic" />
+          <result special-1="130004" control-mode="bns" />
+        </decision>
+		<decision>
+          <condition skill="130002" />
+          <result special-1="130002" control-mode="classic" />
+          <result special-1="130002" control-mode="bns" />
+        </decision>
+      ]]>
+      </append-buffer>
+    </insert-sibling-before>
+    </select-node>
+  </select-nodes>
+  </patch>
+  <patch file="skill3_contextscriptdata_forcemaster_contextsimplemode.xml">
+  <select-nodes query="/table/contextscript/stance">
+    <select-node query="./layer">
+    <insert-sibling-before name="layer">
+      <append-buffer>
+      <![CDATA[ 
+        <decision>
+          <condition skill="130004" />
+          <result special-1="130004" control-mode="classic" />
+          <result special-1="130004" control-mode="bns" />
+        </decision>
+		<decision>
+          <condition skill="130002" />
+          <result special-1="130002" control-mode="classic" />
+          <result special-1="130002" control-mode="bns" />
+        </decision>
+      ]]>
+      </append-buffer>
+    </insert-sibling-before>
+    </select-node>
+  </select-nodes>
+  </patch>
+</patches>
