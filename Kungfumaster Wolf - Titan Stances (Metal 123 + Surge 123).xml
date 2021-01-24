@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patches>
+  <!-- patch for normal mode -->
+  <patch file="skill3_contextscriptdata_kungfufighter.xml">
+    <!-- 단타 is the normal stance, 연계 is the titan stance-->
+    <select-nodes query="/table/contextscript/stance[@stance='단타']">
+      <select-node query="./layer">
+
+        <!-- blue titan strike buff combo on 1 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113695" />
+                <result control-mode="classic" skillbar-1="113695" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-1="113695" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113696" />
+                <result control-mode="classic" skillbar-1="113696" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113696" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113697" />
+                <result control-mode="classic" skillbar-1="113697" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113697" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113698" />
+                <result control-mode="classic" skillbar-1="113698" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113698" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113671" />
+                <result control-mode="classic" skillbar-1="113671" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113671" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113672" />
+                <result control-mode="classic" skillbar-1="113672" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113672" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- yellow titan strike buff combo on 2 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113680" />
+                <result control-mode="classic" skillbar-2="113680" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-2="113680" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113681" />
+                <result control-mode="classic" skillbar-2="113681" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113681" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113682" />
+                <result control-mode="classic" skillbar-2="113682" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113682" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113683" />
+                <result control-mode="classic" skillbar-2="113683" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113683" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113684" />
+                <result control-mode="classic" skillbar-2="113684" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113684" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113685" />
+                <result control-mode="classic" skillbar-2="113685" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113685" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- red titan strike buff combo on 3 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113690" />
+                <result control-mode="classic" skillbar-3="113690" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-3="113690" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113691" />
+                <result control-mode="classic" skillbar-3="113691" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113691" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113692" />
+                <result control-mode="classic" skillbar-3="113692" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113692" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113693" />
+                <result control-mode="classic" skillbar-3="113693" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113693" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113212" />
+                <result control-mode="classic" skillbar-3="113212" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113212" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113213" />
+                <result control-mode="classic" skillbar-3="113213" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113213" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- blue titan smite buff combo on 1 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113635" />
+                <result control-mode="classic" skillbar-1="113635" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-1="113635" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113636" />
+                <result control-mode="classic" skillbar-1="113636" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113636" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113637" />
+                <result control-mode="classic" skillbar-1="113637" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113637" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113638" />
+                <result control-mode="classic" skillbar-1="113638" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113638" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113611" />
+                <result control-mode="classic" skillbar-1="113611" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113611" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113612" />
+                <result control-mode="classic" skillbar-1="113612" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113612" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- yellow titan smite buff combo on 2 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113620" />
+                <result control-mode="classic" skillbar-2="113620" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-2="113620" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113621" />
+                <result control-mode="classic" skillbar-2="113621" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113621" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113622" />
+                <result control-mode="classic" skillbar-2="113622" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113622" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113623" />
+                <result control-mode="classic" skillbar-2="113623" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113623" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113624" />
+                <result control-mode="classic" skillbar-2="113624" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113624" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113625" />
+                <result control-mode="classic" skillbar-2="113625" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113625" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- red titan smite buff combo on 3 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113630" />
+                <result control-mode="classic" skillbar-3="113630" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-3="113630" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113631" />
+                <result control-mode="classic" skillbar-3="113631" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113631" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113632" />
+                <result control-mode="classic" skillbar-3="113632" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113632" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113633" />
+                <result control-mode="classic" skillbar-3="113633" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113633" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113202" />
+                <result control-mode="classic" skillbar-3="113202" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113202" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113203" />
+                <result control-mode="classic" skillbar-3="113203" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113203" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+    <!-- initial titan strike available out of stance -->
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113211" />
+                <result control-mode="bns" special-1="113211" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+    <!-- initial titan smite available out of stance -->
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113201" />
+                <result control-mode="bns" special-2="113201" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+  </patch>
+
+  <!-- patch for simple mode -->
+  <patch file="skill3_contextscriptdata_kungfufighter_contextsimplemode.xml">
+    <!-- 단타 is the normal stance, 연계 is the titan stance-->
+    <select-nodes query="/table/contextscript/stance[@stance='단타']">
+      <select-node query="./layer">
+
+        <!-- blue titan strike buff combo on 1 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113695" />
+                <result control-mode="classic" skillbar-1="113695" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-1="113695" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113696" />
+                <result control-mode="classic" skillbar-1="113696" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113696" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113697" />
+                <result control-mode="classic" skillbar-1="113697" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113697" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113698" />
+                <result control-mode="classic" skillbar-1="113698" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113698" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113671" />
+                <result control-mode="classic" skillbar-1="113671" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113671" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113672" />
+                <result control-mode="classic" skillbar-1="113672" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113672" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- yellow titan strike buff combo on 2 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113680" />
+                <result control-mode="classic" skillbar-2="113680" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-2="113680" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113681" />
+                <result control-mode="classic" skillbar-2="113681" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113681" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113682" />
+                <result control-mode="classic" skillbar-2="113682" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113682" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113683" />
+                <result control-mode="classic" skillbar-2="113683" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113683" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113684" />
+                <result control-mode="classic" skillbar-2="113684" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113684" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113685" />
+                <result control-mode="classic" skillbar-2="113685" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113685" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- red titan strike buff combo on 3 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113690" />
+                <result control-mode="classic" skillbar-3="113690" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-3="113690" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113691" />
+                <result control-mode="classic" skillbar-3="113691" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113691" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113692" />
+                <result control-mode="classic" skillbar-3="113692" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113692" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113693" />
+                <result control-mode="classic" skillbar-3="113693" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113693" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113212" />
+                <result control-mode="classic" skillbar-3="113212" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113212" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113213" />
+                <result control-mode="classic" skillbar-3="113213" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113213" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- blue titan smite buff combo on 1 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113635" />
+                <result control-mode="classic" skillbar-1="113635" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-1="113635" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113636" />
+                <result control-mode="classic" skillbar-1="113636" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113636" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113637" />
+                <result control-mode="classic" skillbar-1="113637" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113637" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113638" />
+                <result control-mode="classic" skillbar-1="113638" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113638" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113611" />
+                <result control-mode="classic" skillbar-1="113611" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113611" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113612" />
+                <result control-mode="classic" skillbar-1="113612" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113612" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- yellow titan smite buff combo on 2 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113620" />
+                <result control-mode="classic" skillbar-2="113620" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-2="113620" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113621" />
+                <result control-mode="classic" skillbar-2="113621" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113621" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113622" />
+                <result control-mode="classic" skillbar-2="113622" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113622" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113623" />
+                <result control-mode="classic" skillbar-2="113623" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113623" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113624" />
+                <result control-mode="classic" skillbar-2="113624" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113624" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113625" />
+                <result control-mode="classic" skillbar-2="113625" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113625" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- red titan smite buff combo on 3 -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113630" />
+                <result control-mode="classic" skillbar-3="113630" key-status="unpress" skillbar-ui-effect="immune-break" />
+                <result control-mode="bns" skillbar-3="113630" key-status="unpress" skillbar-ui-effect="immune-break" />
+              </decision>
+              <decision>
+                <condition skill="113631" />
+                <result control-mode="classic" skillbar-3="113631" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113631" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113632" />
+                <result control-mode="classic" skillbar-3="113632" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113632" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113633" />
+                <result control-mode="classic" skillbar-3="113633" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113633" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113202" />
+                <result control-mode="classic" skillbar-3="113202" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113202" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113203" />
+                <result control-mode="classic" skillbar-3="113203" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113203" skillbar-ui-effect="key-change" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+    <!-- initial titan strike available out of stance -->
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113211" />
+                <result control-mode="bns" special-1="113211" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+    <!-- initial titan smite available out of stance -->
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="113201" />
+                <result control-mode="bns" special-2="113201" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+
+  </patch>
+</patches>
