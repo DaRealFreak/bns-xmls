@@ -16,9 +16,9 @@
                 <result control-mode="bns" skillbar-1="113695" key-status="unpress" skillbar-ui-effect="immune-break" />
               </decision>
               <decision>
-                <condition skill="113698" />
-                <result control-mode="classic" skillbar-1="113698" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-1="113698" skillbar-ui-effect="key-change" />
+                <condition skill="113696" />
+                <result control-mode="classic" skillbar-1="113696" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113696" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
                 <condition skill="113697" />
@@ -26,24 +26,19 @@
                 <result control-mode="bns" skillbar-1="113697" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
-                <condition skill="113621" />
-                <result control-mode="classic" skillbar-1="113621" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-1="113621" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113696" />
-                <result control-mode="classic" skillbar-1="113696" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-1="113696" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113672" />
-                <result control-mode="classic" skillbar-1="113672" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-1="113672" skillbar-ui-effect="key-change" />
+                <condition skill="113698" />
+                <result control-mode="classic" skillbar-1="113698" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113698" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
                 <condition skill="113671" />
                 <result control-mode="classic" skillbar-1="113671" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-1="113671" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113672" />
+                <result control-mode="classic" skillbar-1="113672" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-1="113672" skillbar-ui-effect="key-change" />
               </decision>
             ]]>
           </append-buffer>
@@ -59,19 +54,9 @@
                 <result control-mode="bns" skillbar-2="113680" key-status="unpress" skillbar-ui-effect="immune-break" />
               </decision>
               <decision>
-                <condition skill="113685" />
-                <result control-mode="classic" skillbar-2="113685" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-2="113685" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113684" />
-                <result control-mode="classic" skillbar-2="113684" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-2="113684" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113683" />
-                <result control-mode="classic" skillbar-2="113683" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-2="113683" skillbar-ui-effect="key-change" />
+                <condition skill="113681" />
+                <result control-mode="classic" skillbar-2="113681" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113681" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
                 <condition skill="113682" />
@@ -79,9 +64,19 @@
                 <result control-mode="bns" skillbar-2="113682" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
-                <condition skill="113681" />
-                <result control-mode="classic" skillbar-2="113681" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-2="113681" skillbar-ui-effect="key-change" />
+                <condition skill="113683" />
+                <result control-mode="classic" skillbar-2="113683" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113683" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113684" />
+                <result control-mode="classic" skillbar-2="113684" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113684" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113685" />
+                <result control-mode="classic" skillbar-2="113685" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-2="113685" skillbar-ui-effect="key-change" />
               </decision>
             ]]>
           </append-buffer>
@@ -97,9 +92,9 @@
                 <result control-mode="bns" skillbar-3="113690" key-status="unpress" skillbar-ui-effect="immune-break" />
               </decision>
               <decision>
-                <condition skill="113693" />
-                <result control-mode="classic" skillbar-3="113693" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-3="113693" skillbar-ui-effect="key-change" />
+                <condition skill="113691" />
+                <result control-mode="classic" skillbar-3="113691" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113691" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
                 <condition skill="113692" />
@@ -107,19 +102,19 @@
                 <result control-mode="bns" skillbar-3="113692" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
-                <condition skill="113691" />
-                <result control-mode="classic" skillbar-3="113691" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-3="113691" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113213" />
-                <result control-mode="classic" skillbar-3="113213" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-3="113213" skillbar-ui-effect="key-change" />
+                <condition skill="113693" />
+                <result control-mode="classic" skillbar-3="113693" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113693" skillbar-ui-effect="key-change" />
               </decision>
               <decision>
                 <condition skill="113212" />
                 <result control-mode="classic" skillbar-3="113212" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-3="113212" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113213" />
+                <result control-mode="classic" skillbar-3="113213" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-3="113213" skillbar-ui-effect="key-change" />
               </decision>
             ]]>
           </append-buffer>
@@ -135,16 +130,6 @@
                 <result control-mode="bns" skillbar-5="113635" key-status="unpress" skillbar-ui-effect="immune-break" />
               </decision>
               <decision>
-                <condition skill="113611" />
-                <result control-mode="classic" skillbar-5="113611" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-5="113611" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113612" />
-                <result control-mode="classic" skillbar-5="113612" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-5="113612" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
                 <condition skill="113636" />
                 <result control-mode="classic" skillbar-5="113636" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-5="113636" skillbar-ui-effect="key-change" />
@@ -158,6 +143,16 @@
                 <condition skill="113638" />
                 <result control-mode="classic" skillbar-5="113638" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-5="113638" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113611" />
+                <result control-mode="classic" skillbar-5="113611" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-5="113611" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113612" />
+                <result control-mode="classic" skillbar-5="113612" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-5="113612" skillbar-ui-effect="key-change" />
               </decision>
             ]]>
           </append-buffer>
@@ -211,16 +206,6 @@
                 <result control-mode="bns" skillbar-7="113630" key-status="unpress" skillbar-ui-effect="immune-break" />
               </decision>
               <decision>
-                <condition skill="113202" />
-                <result control-mode="classic" skillbar-7="113202" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-7="113202" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
-                <condition skill="113203" />
-                <result control-mode="classic" skillbar-7="113203" skillbar-ui-effect="key-change" />
-                <result control-mode="bns" skillbar-7="113203" skillbar-ui-effect="key-change" />
-              </decision>
-              <decision>
                 <condition skill="113631" />
                 <result control-mode="classic" skillbar-7="113631" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-7="113631" skillbar-ui-effect="key-change" />
@@ -234,6 +219,16 @@
                 <condition skill="113633" />
                 <result control-mode="classic" skillbar-7="113633" skillbar-ui-effect="key-change" />
                 <result control-mode="bns" skillbar-7="113633" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113202" />
+                <result control-mode="classic" skillbar-7="113202" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-7="113202" skillbar-ui-effect="key-change" />
+              </decision>
+              <decision>
+                <condition skill="113203" />
+                <result control-mode="classic" skillbar-7="113203" skillbar-ui-effect="key-change" />
+                <result control-mode="bns" skillbar-7="113203" skillbar-ui-effect="key-change" />
               </decision>
             ]]>
           </append-buffer>
