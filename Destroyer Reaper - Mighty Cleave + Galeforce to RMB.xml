@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patches>
+  <patch file="skill3_contextscriptdata_destroyer.xml">
+
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+
+        <!-- Awakened Mighty Cleave to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="121620" />
+                <result context-2="121620" control-mode="classic" />
+                <result context-2="121620" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="121621" />
+                <result context-2="121621" control-mode="classic" />
+                <result context-2="121621" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Awakened Galeforce to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="122620" />
+                <result context-2="122620" control-mode="classic" />
+                <result context-2="122620" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="122621" />
+                <result context-2="122621" control-mode="classic" />
+                <result context-2="122621" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Mighty Cleave to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="121038" />
+                <result context-2="121038" control-mode="classic" />
+                <result context-2="121038" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="121039" />
+                <result context-2="121039" control-mode="classic" />
+                <result context-2="121039" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Galeforce to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="122038" />
+                <result context-2="122038" control-mode="classic" />
+                <result context-2="122038" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="122039" />
+                <result context-2="122039" control-mode="classic" />
+                <result context-2="122039" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+      </select-node>
+    </select-nodes>
+
+    <!-- Remove Awakened Mighty Cleave from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='121620') or (@skill='121621')]/following-sibling::result[(@context-3='121620') or (@context-3='121621')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Awakened Galeforce from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='122620') or (@skill='122621')]/following-sibling::result[(@context-3='122620') or (@context-3='122621')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Mighty Cleave from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='121038') or (@skill='121039')]/following-sibling::result[(@context-3='121038') or (@context-3='121039')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Galeforce from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='122038') or (@skill='122039')]/following-sibling::result[(@context-3='122038') or (@context-3='122039')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+  </patch>
+  <patch file="skill3_contextscriptdata_destroyer_contextsimplemode.xml">
+
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+
+        <!-- Awakened Mighty Cleave to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="121620" />
+                <result context-2="121620" control-mode="classic" />
+                <result context-2="121620" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="121621" />
+                <result context-2="121621" control-mode="classic" />
+                <result context-2="121621" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Awakened Galeforce to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="122620" />
+                <result context-2="122620" control-mode="classic" />
+                <result context-2="122620" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="122621" />
+                <result context-2="122621" control-mode="classic" />
+                <result context-2="122621" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Mighty Cleave to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="121038" />
+                <result context-2="121038" control-mode="classic" />
+                <result context-2="121038" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="121039" />
+                <result context-2="121039" control-mode="classic" />
+                <result context-2="121039" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+        <!-- Galeforce to RMB -->
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="122038" />
+                <result context-2="122038" control-mode="classic" />
+                <result context-2="122038" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="122039" />
+                <result context-2="122039" control-mode="classic" />
+                <result context-2="122039" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+
+      </select-node>
+    </select-nodes>
+
+    <!-- Remove Awakened Mighty Cleave from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='121620') or (@skill='121621')]/following-sibling::result[(@context-3='121620') or (@context-3='121621')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Awakened Galeforce from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='122620') or (@skill='122621')]/following-sibling::result[(@context-3='122620') or (@context-3='122621')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Mighty Cleave from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='121038') or (@skill='121039')]/following-sibling::result[(@context-3='121038') or (@context-3='121039')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+    <!-- Remove Galeforce from F -->
+    <select-nodes query="//stance/layer/decision/condition[(@skill='122038') or (@skill='122039')]/following-sibling::result[(@context-3='122038') or (@context-3='122039')]">
+      <remove-attribute name="context-3" />
+    </select-nodes>
+
+  </patch>
+</patches>
