@@ -1,0 +1,36 @@
+<patches>
+  <patch file="skill3_contextscriptdata_blademaster.xml">
+    <select-nodes query="/table/contextscript/stance">
+      <select-node query="./layer">
+        <insert-sibling-before name="layer">
+          <append-buffer>
+            <![CDATA[
+              <decision>
+                <condition skill="103320" />
+                <result context-6="103320" control-mode="classic" />
+                <result context-6="103320" control-mode="bns" />
+              </decision>
+              <decision>
+                <condition skill="103321" />
+                <result context-6="103321" control-mode="classic" />
+                <result context-6="103321" control-mode="bns" />
+              </decision>
+            ]]>
+          </append-buffer>
+        </insert-sibling-before>
+      </select-node>
+    </select-nodes>
+    <select-nodes query="//stance/layer/decision/result[@context-1='103320']">
+      <remove-attribute name="context-1" />
+      <append-attribute name="skillbar-6">
+        <set-value value="103320" />
+      </append-attribute>
+    </select-nodes>
+    <select-nodes query="//stance/layer/decision/result[@context-1='103321']">
+      <remove-attribute name="context-1" />
+      <append-attribute name="skillbar-6">
+        <set-value value="103321" />
+      </append-attribute>
+    </select-nodes>
+  </patch>
+</patches>
