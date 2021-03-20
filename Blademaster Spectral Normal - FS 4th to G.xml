@@ -8,14 +8,14 @@
       <append-buffer>
       <![CDATA[ 
         <decision>
-			<condition skill="103493" />
-			<result special-1="103493" control-mode="classic" />
-			<result special-1="103493" control-mode="bns" />
+		<condition skill="103493" />
+		<result special-1="103493" control-mode="classic" />
+		<result special-1="103493" control-mode="bns" />
         </decision>
-		<decision>
-			<condition skill="103513" />
-			<result special-1="103513" control-mode="classic" />
-			<result special-1="103513" control-mode="bns" />
+	<decision>
+		<condition skill="103513" />
+		<result special-1="103513" control-mode="classic" />
+		<result special-1="103513" control-mode="bns" />
         </decision>
       ]]>
       </append-buffer>
