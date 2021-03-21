@@ -7,13 +7,13 @@
             <![CDATA[
               <decision>
                 <condition skill="103320" />
-                <result context-6="103320" control-mode="classic" />
-                <result context-6="103320" control-mode="bns" />
+                <result skillbar-6="103320" control-mode="classic" />
+                <result skillbar-6="103320" control-mode="bns" />
               </decision>
               <decision>
                 <condition skill="103321" />
-                <result context-6="103321" control-mode="classic" />
-                <result context-6="103321" control-mode="bns" />
+                <result skillbar-6="103321" control-mode="classic" />
+                <result skillbar-6="103321" control-mode="bns" />
               </decision>
             ]]>
           </append-buffer>
